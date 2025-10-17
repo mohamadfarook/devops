@@ -1,9 +1,9 @@
-    pipeline {
+       pipeline {
         agent any
         stages {
             stage('Checkout') {
                 steps {
-                    git 'https://github.com/your-org/your-repo.git' // Replace with your repository URL
+                    git 'https://github.com/mohamadfarook/devops/' // Replace with your repository URL
                 }
             }
             stage('Build') {
