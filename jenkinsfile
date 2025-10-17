@@ -1,0 +1,18 @@
+    pipeline {
+        agent any
+        stages {
+            stage('Checkout') {
+                steps {
+                    git 'https://github.com/your-org/your-repo.git' // Replace with your repository URL
+                }
+            }
+            stage('Build') {
+                steps {
+                    // Example for a Maven project
+                    sh 'mvn clean install' 
+                    // Example for a Node.js project
+                    // sh 'npm install && npm run build' 
+                }
+            }
+        }
+    }
